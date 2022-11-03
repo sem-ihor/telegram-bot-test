@@ -4,6 +4,7 @@ const token = '5550938956:AAHMUWl6WZtAb3BPzA6mVMvOxi2JRqZiBh0'
 const bot = new TelegramApi(token, {polling: true})
 
 bot.on('message', async (msg) => {
+    console.log(msg)
     const text = msg.text
     const chatId = msg.chat.id
 
